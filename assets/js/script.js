@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-  // QUESTION 6
-
-  //Implement the showing and hiding of the sidebar when the user clicks on #sidebar-button here:
   
 $("#sidebar-button").click(function(){
   if ($(".sidebar-container").hasClass("sidebar-active")) {
@@ -21,7 +18,12 @@ $("#sidebar-button").click(function(){
   }
 })
 
-  // QUESTION 7
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
 
   //Implement the hiding of the sidebar when the user clicks on the page wrapper here:
 $(".page-wrapper").click(function(){
@@ -33,35 +35,50 @@ $(".page-wrapper").click(function(){
   }
 })
 
-  // QUESTION 8
-
-  //Implement the "slide to left" when the user clicks on #carousel-next here
-
-  $('#carousel-next').click(function(){
-    var temp = parseInt($('#carousel').css('margin-left').replace("px", ""));
-    if (temp == -3840){
-      return false;
-    } else {
-      var y = temp - 960;
-      $("#carousel").css('margin-left', y);
-    }
-  })
-
-  //Implement the "slide to right" when the user clicks on #carousel-prev here
- $('#carousel-prev').click(function(){
-    var temp = parseInt($('#carousel').css('margin-left').replace("px", ""));
-    if (temp == 0){
-      return false;
-    } else {
-      var y = temp + 960;
-      $("#carousel").css('margin-left', y);
-    }
-  })
-
-
-  //THIS IS NOT A REQUIRED QUESTION 
-  // EXTRA FOR EXPERTS 
-
-  // Implement a "smooth scroll" when the user clicks on the sidebar links here
-
 });
+
+// $("#ds-info").hide();
+// $("#berk-info").hide();
+// $("#taiko-info").hide();
+// $("#kumon-info").hide();
+// $("#cnr-info").hide();
+//  $("#ds").click(function(){
+//         $("#ds-info").fadeIn(250);
+//         $("#berk-info").hide();
+//         $("#taiko-info").hide();
+//         $("#kumon-info").hide();
+//         $("#cnr-info").hide();
+//     });
+
+//  $("#berk").click(function(){
+//         $("#berk-info").fadeIn(250);
+//         $("#ds-info").hide();
+//         $("#taiko-info").hide();
+//         $("#kumon-info").hide();
+//         $("#cnr-info").hide();
+
+//     });
+
+//  $("#taiko").click(function(){
+//         $("#taiko-info").fadeIn(250);
+//          $("#kumon-info").hide();
+//         $("#cnr-info").hide();
+//         $("#ds-info").hide();
+//         $("#berk-info").hide();
+//     });
+// $("#cnr").click(function(){
+//          $("#cnr-info").fadeIn(250);
+//          $("#kumon-info").hide();
+//         $("#taiko-info").hide();
+//         $("#ds-info").hide();
+//         $("#berk-info").hide();
+
+
+//     });
+// $("#kumon").click(function(){
+//         $("#kumon-info").fadeIn(250);
+//          $("#cnr-info").hide();
+//         $("#taiko-info").hide();
+//         $("#ds-info").hide();
+//         $("#berk-info").hide();
+//     });
