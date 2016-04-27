@@ -6,7 +6,7 @@ body, html {
 	width: 100%;
 	height: 100%;
 	min-width: 960px;
-	background-color: white;
+	background-color: #edeae5;
 	-webkit-font-smoothing: antialiased;
 	-o-font-smoothing: antialiased;
 	font-smoothing: antialiased;
@@ -27,7 +27,7 @@ a {
 	position: fixed;
 	width: 280px;
 	height: 100%;
-	background-color: white;
+	background-color: #edeae5;
 	-webkit-transform: translateX(-280px);
 	-webkit-transition: all 0.3s;
 }
@@ -206,11 +206,10 @@ span.text-content span {
 ul.img-list li:hover span.text-content {
   opacity: 1;
 }
-#hi {
+.p-title {
 	/*padding: 12px;*/
 	font-family: 'Pacifico', cursive;
 	font-size: 300%;
-	color: #78AB46;
 	position: absolute;
 	left: 42%;
 	top: 10%;
@@ -220,7 +219,16 @@ ul.img-list li:hover span.text-content {
 
 }
 
-#more-hi {
+#abtme {
+	color: #78AB46;
+}
+
+#portfolio {
+	color: black;
+	opacity: 0.7;
+}
+
+.tagline {
 	/*padding: 12px;*/
 	font-family: 'Pacifico', cursive;
 	color: black;
@@ -234,16 +242,37 @@ ul.img-list li:hover span.text-content {
 
 }
 
+#proj {
+	color: white;
+	opacity: 0.8;
+	left: 34.3%;
+}
 
+.holder { 
+	position: absolute;
+	width: 25%;
+	height: 25%;
+	background-color: #EBEBEB;
+	opacity: 1;
+	z-index: 10;
+}
+#row {
+	position: absolute;
+	top: 42%;
+	left: 15%;
+}
+.square {
+    width: 250px;
+    height: 250px;
+    background: #edeae5;
+    display: inline-block;
+    margin-right: 60px;
 
+}
 
-
-
-
-
-
-
-
+.square:hover {
+    -webkit-transform: scale(1.25);
+}
 
 
 
@@ -266,7 +295,7 @@ ul.img-list li:hover span.text-content {
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
 	height: 3px;
 	width: 30px;
-	background: #fff;
+	background: #edeae5;
 	position: absolute;
 	display: block;
 	content: '';
