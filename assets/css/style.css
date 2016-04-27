@@ -162,45 +162,50 @@ a {
 
 /* IMAGE FORMATTING FOR ABOUT ME PAGE */
 
-.me-pic {
-	margin-left: 10px;
-	padding: 25px;
-	opacity: 0.8;
 
+ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-#school img{
-	position: absolute;
-	top: 50%;
-	left: 12%;
-
+ul.img-list li {
+  display: inline-block;
+  height: 150px;
+  margin: 0 2em 2em 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(210%);
+  width: 150px;
 }
 
-
-#major img{
-	position: absolute;
-	top: 50%;
-	left: 27.5%;
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
-#sing img{
-	position: absolute;
-	top: 50%;
-	left: 42.3%;
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
 
-#travel img{
-	position: absolute;
-	top: 50%;
-	left: 59%;
+ul.img-list li:hover span.text-content {
+  opacity: 1;
 }
-
-#puzzle img{
-	position: absolute;
-	top: 50%;
-	left: 75%;
-}
-
 #hi {
 	/*padding: 12px;*/
 	font-family: 'Pacifico', cursive;
@@ -208,9 +213,24 @@ a {
 	color: #78AB46;
 	position: absolute;
 	left: 42%;
+	top: 10%;
 	font-weight: bold;
 	margin-top: 15px;
-	opacity: 0.8;
+	opacity: 0.9;
+
+}
+
+#more-hi {
+	/*padding: 12px;*/
+	font-family: 'Pacifico', cursive;
+	color: black;
+	position: absolute;
+	left: 25%;
+	top: 20%;
+	font-weight: bold;
+	font-size: 180%;
+	margin-top: 20px;
+	opacity: 0.6;
 
 }
 
