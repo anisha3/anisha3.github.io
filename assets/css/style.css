@@ -1,0 +1,269 @@
+
+/* DOCUMENT SET UP */
+
+body, html {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	min-width: 960px;
+	background-color: white;
+	-webkit-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	font-family: Lato;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clear {
+	clear: both;
+}
+
+/* ALL SIDEBAR STUFF */
+.sidebar-container {
+	position: fixed;
+	width: 280px;
+	height: 100%;
+	background-color: white;
+	-webkit-transform: translateX(-280px);
+	-webkit-transition: all 0.3s;
+}
+
+.sidebar-item {
+/*	font-weight: 700;
+	font-size: 16px;
+	color: white;*/
+	color: #78AB46;
+	font-size: 120%;
+	font-family: 'PT Sans Narrow', sans-serif;
+	padding: 12px;
+	letter-spacing: 3px;
+	opacity: 0.7;
+	cursor: pointer;
+	font-weight: bold;
+
+}
+
+/* Styling the Sidebar Button */
+#sidebar-button {
+	position: fixed;
+	z-index: 100;
+	left: 15px;
+	top: 15px;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+} 
+
+/* Overriding default styles on the ul */
+.sidebar-container ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-top: 10px;
+}
+
+.bg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.section {
+	width: 100%;
+	height: 700px;
+	position: relative;
+}
+/*#home-section {
+	background: url('../img/bg.JPG') no-repeat 50% 50% fixed;
+	background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+}
+*/
+#about-section {
+	background-color: white;
+}
+
+#project-section  {
+	background-color: #8bb2af;
+}
+
+#fact-section {
+	background-color: #fff;
+}
+
+#name {
+	font-size: 500%;
+	font-family: 'Pacifico', cursive;
+	position: absolute;
+	top: 50%;
+	left: 32%;
+	transform: translate(-50%, -50%);
+	z-index: 11;
+	color: white;
+	cursor: default;
+}
+
+#color-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.4;
+	z-index: 10;
+}
+
+/* Styling for the quotes and text in each section */
+
+
+/*.text {
+	position: absolute;
+	font-size: 36px;
+	color: white;
+	font-weight: 700;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+   	transform: translateX(-50%) translateY(-50%);
+}*/
+
+ .text #contact-text {
+ 	color: #D3D3D3;
+ 	
+ }
+
+/* jQuery Manipulation Classes */
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.wrapper-active, .button-active {
+	-webkit-transform: translateX(280px);
+	-moz-transform: translateX(280px);
+	transform: translateX(280px);
+}
+
+.sidebar-active {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-o-transform: translateX(0px);
+}
+
+
+
+/* IMAGE FORMATTING FOR ABOUT ME PAGE */
+
+.me-pic {
+/*	position: absolute;
+*/	/*top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+	/*margin-left: 100px;*/
+	display: inline-block;
+	margin-left: 10px;
+}
+
+/*#school img{
+	width: 50px;
+}
+*/
+
+/*#major img{
+	position: absolute;
+	top: 23%;
+	left: 62.3%;
+}
+
+#sing img{
+	position: absolute;
+	top: 23%;
+	left: 23.3%;
+}
+
+#travel img{
+	position: absolute;
+	top: 67%;
+	left: 75%;
+}
+
+#puzzle img{
+	position: absolute;
+	top: 67%;
+	left: 9.5%;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RANDOM CODE I DON'T NEED TO UNDERSTAND */
+
+#nav-toggle { 
+	position: absolute; 
+	left: 50%; top: 50%; 
+}
+
+#nav-toggle {
+	padding: 10px 30px 15px 0px; 
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	height: 3px;
+	width: 30px;
+	background: #fff;
+	position: absolute;
+	display: block;
+	content: '';
+}
+
+#nav-toggle span:before {
+	top: -10px; 
+}
+
+#nav-toggle span:after {
+	bottom: -10px;
+}
+
+.page-wrapper {
+	height: 100%;
+	width: 100%;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
